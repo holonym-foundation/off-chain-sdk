@@ -2,7 +2,7 @@
   "name": "@holonym-foundation/off-chain-sdk",
   "version": "0.0.2",
   "license": "MIT",
-  "main": "bulid/index.js",
+  "main": "build/index.js",
   "types": "build/index.d.ts",
   "publishConfig": {
     "access": "public"
