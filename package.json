@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "bulid/index.js",
-  "types": "lib/index.d.ts",
+  "types": "build/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
