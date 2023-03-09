@@ -1,7 +1,8 @@
 {
+  "main": "bulid/index.js",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w"
+    "build": "npx tsc && cp -r src/types/ build/types/",
+    "watch": "npx tsc -w && cp -r src/types/ build/types/"
   },
   "devDependencies": {
     "typescript": "^4.9.5"

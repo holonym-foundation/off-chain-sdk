@@ -1,6 +1,6 @@
 import { initialize } from "zokrates-js";
 import axios from "axios";
-import type { Proof } from "./types";
+import type { Proof } from "./types/types";
 
 // TODO: Maybe: Add option to provide verifying key in case devs want to
 // store the verification key on their infrastructure for quicker access.
