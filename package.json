@@ -4,6 +4,9 @@
   "license": "MIT",
   "main": "bulid/index.js",
   "types": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npx tsc && cp -r src/types/ build/types/",
     "watch": "npx tsc -w && cp -r src/types/ build/types/"
