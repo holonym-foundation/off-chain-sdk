@@ -43,4 +43,9 @@ export default {
   verifyUSResidencyProof,
   verifyMedicalSpecialtyProof,
 };
-export { verifyUniquenessProof, verifyUSResidencyProof, verifyMedicalSpecialtyProof };
+export {
+  verifyUniquenessProof,
+  verifyUSResidencyProof,
+  verifyMedicalSpecialtyProof,
+  Proof,
+};
