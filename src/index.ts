@@ -16,6 +16,17 @@ async function verifyUniquenessProof(proof: Proof): Promise<boolean> {
   return zokProvider.verify(vk, proof);
 }
 
+async function verifyUniquenessPhoneProof(proof: Proof): Promise<boolean> {
+  // Get verification key
+  const resp = await axios.get(
+    `https://preproc-zkp.s3.us-east-2.amazonaws.com/sybilPhone.verifying.key`
+  );
+  const vk = resp.data;
+  // Verify proof
+  const zokProvider = await initialize();
+  return zokProvider.verify(vk, proof);
+}
+
 async function verifyUSResidencyProof(proof: Proof): Promise<boolean> {
   // Get verification key
   const resp = await axios.get(
@@ -40,11 +51,13 @@ async function verifyMedicalSpecialtyProof(proof: Proof): Promise<boolean> {
 
 export default {
   verifyUniquenessProof,
+  verifyUniquenessPhoneProof,
   verifyUSResidencyProof,
   verifyMedicalSpecialtyProof,
 };
 export {
   verifyUniquenessProof,
+  verifyUniquenessPhoneProof,
   verifyUSResidencyProof,
   verifyMedicalSpecialtyProof,
   Proof,
