@@ -58,3 +58,8 @@ module.exports = {
   },
 };
 ```
+
+We use the following package versions with this configuration:
+
+- `@craco/craco@^6.4.5`
+- `wasm-loader@^1.3.0`
